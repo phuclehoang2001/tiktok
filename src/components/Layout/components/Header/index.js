@@ -55,9 +55,7 @@ function Header() {
                     {/* target="_blank" : thẻ <a> new tab */}
                     {/* <Button text>Upload</Button> */}
                     <Button text>Upload</Button>
-                    <Button primary disabled>
-                        Log in
-                    </Button>
+                    <Button outline>Log in</Button>
                 </div>
             </div>
         </header>
