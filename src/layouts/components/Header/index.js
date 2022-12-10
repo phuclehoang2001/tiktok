@@ -21,8 +21,8 @@ import {
     Keyboard,
     MoreIcon,
 } from '~/components/Icons';
-import Search from '~/components/Layout/components/Search';
-import routesConfig from '~/config/routes';
+import Search from '~/layouts/components/Search';
+import config from '~/config';
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [
     {
@@ -95,7 +95,7 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <Link to={routesConfig.home} className={cx('logo')}>
+                <Link to={config.routes.home} className={cx('logo')}>
                     <img src={images.logo} alt="TikTok" />
                 </Link>
 
@@ -134,7 +134,7 @@ function Header() {
                                 className={cx('user-avatar')}
                                 src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/083bdd98191f72128eebdbcca718c29f~c5_100x100.jpeg?x-expires=1668913200&x-signature=W5nScPghLTPFGAI9w7FOo3ZTT6s%3D"
                                 alt="Nguyen Van A"
-                                fallback="https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-1/272894181_1335025536945556_9167243748308160443_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=103&ccb=1-7&_nc_sid=7206a8&_nc_ohc=K5qjAXnRS9sAX9yFP7_&_nc_ht=scontent.fsgn4-1.fna&oh=00_AfDhrYCUH8XrxE7B9NUlNsa8Gx-y1gu488HGjcz2xJlGYQ&oe=63888D3C"
+                                //fallback="https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-1/272894181_1335025536945556_9167243748308160443_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=103&ccb=1-7&_nc_sid=7206a8&_nc_ohc=K5qjAXnRS9sAX9yFP7_&_nc_ht=scontent.fsgn4-1.fna&oh=00_AfDhrYCUH8XrxE7B9NUlNsa8Gx-y1gu488HGjcz2xJlGYQ&oe=63888D3C"
                             />
                         ) : (
                             <button className={cx('more-btn')}>
