@@ -16,11 +16,11 @@ function LoginForm({ label, title, reset, backLogin, submit, refLogin, login, cr
             ...prevState,
             [id]: value,
         }));
-        console.log(account);
     };
 
     return (
         <form>
+            <h2>{label}</h2>
             <h2>{label}</h2>
             <fieldset>
                 <legend>{title}</legend>

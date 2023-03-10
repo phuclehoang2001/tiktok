@@ -1,9 +1,9 @@
-// import * as searchServices from '~/services/searchService';
+import * as testService from '~/services/testService';
 function Following() {
     const handleResult = () => {
         const fetchApi = async () => {
-            // const result = await searchServices.getData();
-            // console.log(result);
+            const result = await testService.getData();
+            console.log(result);
         };
         fetchApi();
     };
